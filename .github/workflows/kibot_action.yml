@@ -4,18 +4,20 @@ name: "Variants demo using GitHub actions"
 on:
   push:
     paths:
-      - '*.sch'
+      - '*.kicad_sch'
       - '*.kicad_pcb'
       - '*.kibot.yaml'
       - 'Makefile'
       - '.github/workflows/kibot_action.yml'
   pull_request:
     paths:
-      - '*.sch'
+      - '*.kicad_sch'
       - '*.kicad_pcb'
       - '*.kibot.yaml'
       - 'Makefile'
       - '.github/workflows/kibot_action.yml'
+  repository_dispatch:
+    types: [run_gha]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

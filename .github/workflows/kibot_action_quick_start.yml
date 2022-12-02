@@ -5,13 +5,13 @@ name: "Variants demo using GitHub actions and quick-start"
 on:
   push:
     paths:
-      - '*.sch'
+      - '*.kicad_sch'
       - '*.kicad_pcb'
       - '*.kibot.yaml'
       - '.github/workflows/kibot_action_quick_start.yml'
   pull_request:
     paths:
-      - '*.sch'
+      - '*.kicad_sch'
       - '*.kicad_pcb'
       - '*.kibot.yaml'
       - '.github/workflows/kibot_action_quick_start.yml'
@@ -24,10 +24,13 @@ jobs:
 
     steps:
     - name: Get repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
+      with:
+        # So we can run a diff between last 2 changes
+        fetch-depth: '0'
 
     - name: Run KiBot
-      uses: INTI-CMNB/KiBot@v2_dk6
+      uses: INTI-CMNB/KiBot@v2_k6
       with:
         quickstart: YES
 
@@ -36,11 +39,3 @@ jobs:
       with:
         name: Automatic_outputs
         path: Generated
-
-    - name: Deploy navigate results
-      uses: JamesIves/github-pages-deploy-action@v4.3.3
-      with:
-        branch: main
-        folder: Generated
-        repository-name: INTI-CMNB/kibot_variants_arduprog_site
-        token: ${{ secrets.TOKEN }}

@@ -31,6 +31,7 @@ jobs:
 
     - name: Quick Start
       run: |
+        ls -la /usr/share/kicad/
         kibot --quick-start
 
     - name: Retrieve results

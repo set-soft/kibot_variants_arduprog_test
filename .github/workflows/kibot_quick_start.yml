@@ -20,8 +20,8 @@ on:
 jobs:
   quick:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto_full:latest
-    # container: ghcr.io/inti-cmnb/kicad6_auto:dev
+    # container: ghcr.io/inti-cmnb/kicad6_auto_full:latest
+    container: ghcr.io/inti-cmnb/kicad6_auto_full:dev
 
     steps:
     - uses: actions/checkout@v3
@@ -36,7 +36,7 @@ jobs:
         kibot --quick-start
 
     - name: Retrieve results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: Automatic_outputs
         path: Generated
@@ -50,7 +50,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Retrieve results
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: Automatic_outputs
         path: Generated

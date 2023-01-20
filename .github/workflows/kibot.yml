@@ -22,35 +22,35 @@ on:
 jobs:
   ERC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:latest
+    container: ghcr.io/inti-cmnb/kicad6_auto_full:dev
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Run ERC
       run: |
         make erc
 
     - name: Retrieve results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: ERC_Output
         path: Generated
 
   DRC:
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:latest
+    container: ghcr.io/inti-cmnb/kicad6_auto_full:dev
     needs: ERC
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Run DRC
       run: |
         make drc
 
     - name: Retrieve results
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
         name: DRC_Output
         path: Generated
@@ -58,18 +58,18 @@ jobs:
   FabSch:
     name: Schematic fabrication files
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad6_auto:latest
+    container: ghcr.io/inti-cmnb/kicad6_auto_full:dev
     needs: [ERC, DRC]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Run schematic stuff
       run: |
         make ardu_prog
 
     - name: Retrieve results
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v3
       with:
         name: All_Output
         path: Generated

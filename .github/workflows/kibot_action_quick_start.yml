@@ -31,8 +31,7 @@ jobs:
 
     - name: Run KiBot
       # full k6 + dev
-      # uses: INTI-CMNB/KiBot@3e62badf5ea28ce0e7f649b064fa27f7dcbada93
-      uses: INTI-CMNB/KiBot@ca6d2145a5d1f09ecad722f0acc8efed7927c323
+      uses: INTI-CMNB/KiBot@v2_dk6
       with:
         quickstart: YES
 

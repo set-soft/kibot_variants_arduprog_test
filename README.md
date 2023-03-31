@@ -4,6 +4,7 @@
 
 This is an example of how to use variants with [KiBot](https://github.com/INTI-CMNB/KiBot).
 
+
 ## Index
 
 * [Definition](#Definition)

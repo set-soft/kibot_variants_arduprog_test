@@ -372,15 +372,15 @@ Excluded components are removed from the 3D model (STEP file and 3D Viewer rende
 
 - Default variant
 
-[![Default variant](https://set-soft.github.io/kibot_variants_arduprog/images/STEP_default_s.png)](https://set-soft.github.io/kibot_variants_arduprog/images/STEP_default.png)
+[![Default variant](https://set-soft.github.io/kibot_variants_arduprog_test/images/STEP_default_s.png)](https://set-soft.github.io/kibot_variants_arduprog_test/images/STEP_default.png)
 
 - XTAL variant
 
-[![Default variant](https://set-soft.github.io/kibot_variants_arduprog/images/STEP_XTAL_s.png)](https://set-soft.github.io/kibot_variants_arduprog/images/STEP_XTAL.png)
+[![Default variant](https://set-soft.github.io/kibot_variants_arduprog_test/images/STEP_XTAL_s.png)](https://set-soft.github.io/kibot_variants_arduprog_test/images/STEP_XTAL.png)
 
 - USB variant
 
-[![Default variant](https://set-soft.github.io/kibot_variants_arduprog/images/STEP_USB_s.png)](https://set-soft.github.io/kibot_variants_arduprog/images/STEP_USB.png)
+[![Default variant](https://set-soft.github.io/kibot_variants_arduprog_test/images/STEP_USB_s.png)](https://set-soft.github.io/kibot_variants_arduprog_test/images/STEP_USB.png)
 
 
 # Changing values

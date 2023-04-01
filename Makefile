@@ -6,6 +6,7 @@ OUT_DIR=Generated
 all: erc drc ardu_prog
 
 erc:
+	cat ascii_art.txt
 	$(KIBOT) $(DEBUG) -d $(OUT_DIR) -s run_drc,update_xml -i
 
 drc:

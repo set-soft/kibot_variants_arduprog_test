@@ -30,8 +30,8 @@ jobs:
         fetch-depth: '0'
 
     - name: Run KiBot
-      # full k7 + dev
-      uses: INTI-CMNB/KiBot@v2_dk7
+      # full k8 + dev
+      uses: INTI-CMNB/KiBot@v2_dk8
       with:
         quickstart: YES
 

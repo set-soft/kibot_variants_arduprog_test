@@ -7920,7 +7920,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "~"
 			(at 76.2 109.22 0)
 			(effects
 				(font
@@ -8835,7 +8835,7 @@
 		(lib_id "Graphic:SYM_Magnet_Large")
 		(at 127 176.53 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -8877,15 +8877,6 @@
 			)
 		)
 		(property "Description" "Magnetic field warning symbol, large"
-			(at 127 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 127 176.53 0)
 			(effects
 				(font
@@ -12469,7 +12460,7 @@
 		(lib_id "Graphic:Logo_Open_Hardware_Large")
 		(at 86.36 172.72 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -12511,15 +12502,6 @@
 			)
 		)
 		(property "Description" "Open Hardware logo, large"
-			(at 86.36 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" "0"
 			(at 86.36 172.72 0)
 			(effects
 				(font
